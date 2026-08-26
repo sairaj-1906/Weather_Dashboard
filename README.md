@@ -2,14 +2,6 @@
 
 A clean, responsive weather dashboard built with vanilla HTML, CSS, and JavaScript — styled with Bootstrap 5 and Tailwind CSS, and powered by the OpenWeatherMap API.
 
-<!--
-  Add your screenshots to a folder like `screenshots/` in the repo,
-  then update the paths below to match your filenames.
--->
-
-![Skyline light mode](./screenshots/Light%20Mode.png)
-![Skyline dark mode](./screenshots/Dark%20Mode.png)
-
 ---
 
 ## ✨ Overview
@@ -27,18 +19,6 @@ The project is intentionally framework-light on the JavaScript side (no build st
 - **Dark mode** — toggle with preference saved in `localStorage`, defaulting to the OS theme on first visit
 - **Fully responsive** — adapts from mobile to desktop using Bootstrap's grid system
 - **Dynamic sky band** — a gradient accent bar that reflects real-time weather conditions
-
-## 📸 Screenshots
-
-| Light Mode | Dark Mode |
-|:---:|:---:|
-| ![Light mode current conditions](./screenshots/Light%20Mode.png) | ![Dark mode current conditions](./screenshots/Dark%20Mode.png) |
-
-| Mobile View | 5-Day Forecast |
-|:---:|:---:|
-| ![Mobile responsive view](./screenshots/Responsive.png) | ![Forecast strip](./screenshots/Forecast%20Strip.png) |
-
-> Replace the placeholder paths above with your own screenshots once you've captured them — see [Adding Screenshots](#adding-screenshots) below.
 
 ## 🛠️ Tech Stack
 
