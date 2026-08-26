@@ -45,12 +45,10 @@ The project is intentionally framework-light on the JavaScript side (no build st
 | Layer | Technology |
 |---|---|
 | Structure | HTML5 |
-| Styling | CSS3 (custom properties for theming), [Bootstrap 5](https://getbootstrap.com/) (grid & components), [Tailwind CSS](https://tailwindcss.com/) (utility styling via Play CDN) |
+| Styling | CSS3 (custom properties for theming) |
 | Logic | Vanilla JavaScript (Fetch API, Geolocation API) |
 | Data | [OpenWeatherMap API](https://openweathermap.org/api) (Current Weather & 5 Day / 3 Hour Forecast) |
 | Fonts | Space Grotesk, Inter, JetBrains Mono (Google Fonts) |
-
-No frameworks are installed as dependencies — Bootstrap and Tailwind are both loaded via CDN, so there's no build step required.
 
 ## 📦 Getting Started
 
@@ -109,20 +107,6 @@ skyline-weather-dashboard/
 - [ ] Unit toggle (°C / °F) in the UI
 - [ ] Weather alerts/warnings
 - [ ] PWA support for offline access
-
-## 🖼️ Adding Screenshots
-
-1. Take screenshots of the app in light mode, dark mode, mobile view, etc.
-2. Save them in a `screenshots/` folder at the project root.
-3. Update the image paths in this README to match your filenames.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](../../issues) or open a pull request.
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
