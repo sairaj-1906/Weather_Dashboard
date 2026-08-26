@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skyline — Weather Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-theme="light" data-condition="clear">
+    <!-- Signature element: a live sky band whose gradient reflects the current weather -->
+    <div class="sky-band" id="skyBand" aria-hidden="true"></div>
+
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">◐</span>
+          <span class="brand-name">Skyline</span>
+        </div>
+
+        <form class="search" id="searchForm" role="search">
+          <input
+            type="text"
+            id="cityInput"
+            class="search-input"
+            placeholder="Search a city…"
+            autocomplete="off"
+            aria-label="Search for a city"
+          />
+          <button type="submit" class="search-btn" aria-label="Search">
+            Search
+          </button>
+        </form>
+
+        <div class="topbar-actions">
+          <button
+            class="icon-btn"
+            id="locationBtn"
+            title="Use current location"
+            aria-label="Use current location"
+          >
+            ⌖
+          </button>
+          <button
+            class="icon-btn"
+            id="themeToggle"
+            title="Toggle dark mode"
+            aria-label="Toggle dark mode"
+          >
+            ☾
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <!-- Status / error line -->
+        <p class="status" id="statusMsg" role="status" aria-live="polite"></p>
+
+        <!-- Current conditions -->
+        <section class="current-card" id="currentCard" hidden>
+          <div class="current-top">
+            <div>
+              <h1 class="place" id="place">—</h1>
+              <p class="updated" id="updated"></p>
+            </div>
+            <img
+              id="currentIcon"
+              class="current-icon"
+              alt=""
+              width="80"
+              height="80"
+            />
+          </div>
+
+          <div class="temp-row">
+            <span class="temp" id="temp">--°</span>
+            <span class="condition" id="condition">—</span>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat">
+              <span class="stat-label">Feels like</span>
+              <span class="stat-value" id="feelsLike">--°</span>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Humidity</span>
+              <span class="stat-value" id="humidity">--%</span>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Wind</span>
+              <span class="stat-value" id="wind">-- km/h</span>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Pressure</span>
+              <span class="stat-value" id="pressure">-- hPa</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5-day forecast -->
+        <section class="forecast" id="forecast" hidden>
+          <h2 class="section-title">5-Day Forecast</h2>
+          <div class="forecast-strip" id="forecastStrip"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Data from OpenWeatherMap · Built with HTML, CSS &amp; JavaScript</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
